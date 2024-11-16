@@ -20,14 +20,19 @@ function getComputerChoice() {
         console.log("Scissors")
     }
 
-
-
 }
 
 
 function getHumanChoice() {
 
+    let result = prompt("Rock, Paper, Scissors")
+    console.log(result)
 
 }
 
+
+
+
+
+getHumanChoice();
 getComputerChoice();

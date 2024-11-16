@@ -11,7 +11,7 @@ This is the psuedocode for Rock paper Scissors
 
 3.  Write a function named getHumanChoice
 
-4. the function will receive the input from user and return the value
+	a. The function will receive the input from user and return the value
 
 5. Create a variable to keep Computer Score
 
