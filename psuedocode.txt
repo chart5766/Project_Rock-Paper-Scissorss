@@ -13,11 +13,17 @@ This is the psuedocode for Rock paper Scissors
 
 	a. The function will receive the input from user and return the value
 
-5. Create a variable to keep Computer Score
+5. Create a variable to keep Computer Score and initialize to 0
 
-6. Create a variable to keep human score
+6. Create a variable to keep human score and initialioze to 0
 
+7. Create a function playRound that accepts 2 parameters (getComputerchoice, getHumanChoice) 
 
+8 getHumanChoice is case -insensitive
+
+9. function playRound prints to console "You lose! Paper beats Rock"
+
+10 increment the humanScore and computerScore variable based on round winner
 
 
 
