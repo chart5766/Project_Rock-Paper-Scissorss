@@ -55,14 +55,14 @@ function playRound(getHumanChoice, getComputerChoice) {
         
 
             console.log("Paper beats rock");
-            computerScore ++;
+            computerScore++;
             return computerScore
         }
 
     else if (getHumanChoice == "rock" && getComputerChoice == "scissors") {
 
             console.log("Rock beats scissors");
-            humanScore ++;
+            humanScore++;
             return humanScore
         }
        
@@ -73,42 +73,54 @@ function playRound(getHumanChoice, getComputerChoice) {
 
         
             console.log("Paper beats rock");
-            humanScore ++;
+            humanScore++;
             return humanScore;
         }
 
     else if (getHumanChoice == "paper" && getComputerChoice == "scissors") {
 
             console.log("Scissors beat paper");
-            computerScore ++;
+            computerScore++;
             return computerScore
+        }
+    
+    
+
+    else if (getHumanChoice == "scissors" && getComputerChoice == "rock") {
+
+        
+
+            console.log("Rock beats scissors");
+            computerScore++;
+            return computerScore;
+        }
+
+    else if (getHumanChoice == "scissors" && getComputerChoice == "paper") {
+
+            console.log("Scissors beat paper");
+            humanScore++;
+            return humanScore;
         }
     
     }
 
-//     if (getHumanChoice == "scissors") {
+function playGame(playRound) {
 
-//         if (getComputerChoice == "rock") {
+    let i = 0;
 
-//             console.log("Rock beats scissors");
-//             computerScore += 1;
-//         }
+    while (i < 6) {
 
-//         if (getComputerChoice == "paper") {
+        playRound(getHumanChoice(), getComputerChoice())
+        i++
+        console.log(humanScore)
+        console.log(computerScore)
+    }
 
-//             console.log("Scissors beat paper");
-//             humanScore += 1;
-//         }
-//     return computerScore, humanScore;
-//     }
 
-//     console.log(humanScore);
-//     console.log(computerScore)
-
-// }
+}
 
 
 
-getHumanChoice();
-getComputerChoice();
-playRound(getHumanChoice(), getComputerChoice());
+
+
+playGame(playRound);
